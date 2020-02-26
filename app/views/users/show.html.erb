@@ -1,5 +1,8 @@
 <div class="contents row">
-  <p><%= @nickname　%>のmypage</p>
+  <p><%= @nickname %>のmypage</p>
 
-  <% @tweets.each do |tweet| %>
-    <div class="content post" style="background-image">
+  <% @tweets.each do |tweet| %>    
+    <%= render partial: "tweets/tweet", locals: { tweet: tweet } %>
+  <% end %>
+  <%= paginate(@tweets) %>
+</div>
