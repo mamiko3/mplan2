@@ -1,6 +1,6 @@
 <div class="contents row">
   <div class="content_post" style="background-image: url(<%= @tweet.image %>);">
-    <% if user_signed_in && current_user.id ==  @tweet.user_id %>
+    <% if user_signed_in? && current_user.id ==  @tweet.user_id %>
     <div class="more">
       <span><%= image_tag 'yajirushi.png'%></span>
       <ul class="more_list">
@@ -20,5 +20,27 @@
       </a>
     </span>
   </div>
-<div>  
+
+  <div class="container">
+    <% if current_user %>
+      <%= form_with(model: [@tweet, @comment], local: true) do |form| %>
+        <%= form.text_area :text, placeholder: "Why don’t we comment?", rows: "2" %>
+        <%= form.submit "SEND" %>
+      <% end %>
+    <% else %>
+      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+    <% end %>
+
+  <div class="comments">
+  <h4>コメント一覧</h4>
+    <% if @comments %>
+      <% @comments.each do |comment| %>
+        <p>
+          <%= link_to comment.user.nickname, "users/#{comment.user_id}" %>
+          <%= comment.text %>
+        </p>
+      <% end%>
+    <% end %>
+  </div>  
+</div>  
 
