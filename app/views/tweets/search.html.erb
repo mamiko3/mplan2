@@ -1,11 +1,9 @@
 <%= form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |form| %>
-  <%= form.text_field :keyword, placeholder: "searching tweets ✏️✏️✏️", class: "search-input" %>
-  <%= form.submit "click here", class: "search-btn" %>
+  <%= form.text_field :keyword, placeholder: "searching tweets", class: "search-input" %>
+  <%= form.submit "search words", class: "search-btn" %>
 <% end %>
-
 <div class="contents row">
   <% @tweets.each do |tweet| %>
     <%= render partial: "tweet", locals: { tweet: tweet } %>
   <% end %>
-  <%= paginate(@tweets) %>
 </div>
