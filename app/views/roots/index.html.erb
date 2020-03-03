@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <%= stylesheet_link_tag 'roots', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'roots', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheets" media="screen and (max-width:767px)" href="roots_sp.css">
+  <link rel="stylesheets" media="screen and (min-width:768px)" href="roots.css">
+  <%# <script src="roots.js"></script> %>
+  <%# <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> %>
+  <%# <script type="text/javascript" src="jquery-1.3.2.js"></script> %>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <!-- jqueryはjsファイルより先に書く。エラーが出る -->
+  <title>ヒカルママ</title>
+</head>
+
+<body>  
+  <div id="main">
+    <span class="label-main">∞∞∞  snack hikaru  ∞∞∞</span>
+    <span class="label-main2">Have fun together.</span>
+  </div>
+
+  <header>
+    <div id="nav-content">
+      <ul class="gnavi">
+        <li><a href="https://note.com" target="blank">about</a></li>
+        <li><a href="http://localhost:3000/tweets" target="blank">pictweet-Neo</a></li>
+        <li><a href="https://twitter.com/OxWyRmYtBFQKaeE" target="blank">contact</a></li>
+      </ul>
+    </div>
+    <%# <div class="header-logo-menu">
+      <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>        
+      </div>
+    </div> %>
+  </header>
+  <%# <div class="title">
+    <p>Have fun together.</p> 
+  </div> %>
+
+  <%# <div id="slideshow" class="slideshow">
+    <img src="/assets/image/pic01.jpg" width="503" height="302" alt="">
+    <img src="image/pic02.jpg" width="503" height="302" alt="">
+    <img src="image/pic03.jpg" width="503" height="302" alt="">
+    <img src="image/pic04.jpg" width="503" height="302" alt="">
+    <img src="image/pic05.jpg" width="503" height="302" alt="">
+  </div>
+    <img class="pic-sp" src="image/pic06.jpg" width="603" height="382" alt="">
+    <%# https://i.pinimg.com/originals/47/f3/01/47f301cea12900064a266d75441e5437.jpg </div>%>
+
+
+
+  <div class="content">
+    <div class="content__left">trend Ranking
+      <div class="content__left--iframe">
+        <script type="text/javascript" 
+        src="https://ssl.gstatic.com/trends_nrtr/2051_RC11/embed_loader.js">
+        </script> 
+        <script type="text/javascript"> trends.embed.renderWidget("dailytrends", "", {"geo":"JP","guestPath":"https://trends.google.co.jp:443/trends/embed/"}); </script>
+      </div>
+      <div class="content__left--search">
+        <form method="get" action="https://www.google.com/search" target="blank" class="search_container">
+          <input type="text" size="25" placeholder="キーワード検索">
+          <input type="submit" value="&#xf002">
+        </form>
+      </div>
+    </div>    
+    <div class="content__right">blog     
+      <div id="slideshow" class="slideshow">
+        <span><%= image_tag 'pic01.jpg', class: 'slideshow' %></span> 
+          <%# <img src="/assets/image/pic01.jpg" width="503" height="302" alt=""> %>
+          <%# <img src="image/pic02.jpg" width="503" height="302" alt="">
+          <img src="image/pic03.jpg" width="503" height="302" alt="">
+          <img src="image/pic04.jpg" width="503" height="302" alt="">
+          <img src="image/pic05.jpg" width="503" height="302" alt=""> %>
+      </div>
+    </div>
+  </div>
+
+  <%# <iframe src="//gifmagazine.net/embed/glp/1259035" width="300" height="225" frameBorder="0" class="gifmagazine-embed" allowFullScreen></iframe><p><a href="https://gifmagazine.net/post_images/1259035" target="_blank">via GIFMAGAZINE</a></p> %>
+<%# 
+
+  <div class="tenor-gif-embed" data-postid="11552703" data-share-method="host" data-width="100%" data-aspect-ratio="1.3351206434316354"><a href="https://tenor.com/view/sakura-fubuki-cherry-blossoms-gif-11552703"></a></div>
+  <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+ %>
+
+
+<div id="footer">
+  Copyright(C) mamiko.kikaku ALL RIGHTS RESERVED.
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+    <!-- <div class="content__center">
+    </div> -->

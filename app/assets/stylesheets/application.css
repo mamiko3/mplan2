@@ -16,11 +16,16 @@
  */
 
   html{
-    font-family: 'Kosugi Maru', ;
-    font-family: pangolin;
+    font-family: 'pangolin' ;
   }
 
-  .header {
-    background-color: bisque;
-    text-align: center;
+  body{
+    height: auto;
+    background: url("/tenor.gif");
   }
+
+  @font-face {
+    font-family: 'CHIKARA-YOWAKU';
+    src: font-url('851CHIKARA-YOWAKU_002.ttf') format('truetype');
+  }
+

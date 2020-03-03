@@ -4,8 +4,13 @@
   }
 }
 
+html{
+  height: auto;
+}
+
 
 body{
+  height: auto;
   margin: 0 auto;
   font-family: 'Pangolin';
 }
@@ -16,8 +21,28 @@ body{
   position: relative;
   background-image: url("https://www.billboard-japan.com/scale/news/00000085/85411/800x_image.jpg");
   background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url("https://www.billboard-japan.com/scale/news/00000085/85411/800x_image.jpg");  /* 背景画像指定 */
-  background-position: center;}
-  
+  background-position: center;
+}
+
+.label-main{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  font-weight: bold; /*太字に*/
+  font-size: 2em;/*サイズ2倍*/
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.label-main2{
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  font-weight: bold; /*太字に*/
+  font-size: 2em;/*サイズ2倍*/
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
 
 ul {
   list-style: none;
@@ -37,11 +62,13 @@ a{
   color: #3879D9;
 }
 
-.contents {
-  height: 100vh;
+.content {
+  height: 600px;
   display: flex;
   justify-content: space-between;
   text-align: center;
+  background: url("/tenor.gif");
+  padding-top: 55px;
 }
 
 .content__left{
@@ -51,7 +78,7 @@ a{
 
 form {
   align-items: center;
-}
+} 
 
 .content__left--iframe{
   height: 100%;
@@ -61,13 +88,13 @@ form {
   height: 40px;
 }
 
-
 .search_container {
     box-sizing: border-box;
     position: relative;
     border: 1px solid #999;
     display: block;
     padding: 3px 10px;
+    margin-top: 15px;
     border-radius: 20px;
     height: 2.3em;
     width: 460px;
@@ -96,18 +123,26 @@ form {
   }
   
 
-.content__right{
+  .content__right{
   width : 40% ;
-  height: 600px;
+  height: 400px;
   /* background-color: lightgray; */
   position: relative;
-}
+  }
 
-.content__bottom{
-  height: 100px;
-  background-color: honeydew;
-}
-
+  /* .gifmagazine-embed{
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+  } */
+/* 
+  .tenor-gif-embed {
+    background-image: url("https://tenor.com/view/sakura-fubuki-cherry-blossoms-gif-11552703");
+    background-size: cover;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 500px;
+  } */
 
 .title{
   width: auto;
@@ -116,8 +151,9 @@ form {
   padding-top: 30px;
 }
 
-footer{
-  height: 10px;
+#footer{
+  line-height: 20px;
+  margin-bottom: 15px;
   text-align: center;
   color: gray
 }
@@ -125,10 +161,9 @@ footer{
 /* #slideshow {
   /* height: 450px; }*/
 
-
-.slideshow {
 	/* position: relative; */
-	width: auto; /* 画像の横幅 */
+.slideshow {
+	width: auto; /*画像の横幅*/
   height: 400px; /* 画像の縦幅 */
   margin: 0 auto;
 }
@@ -140,15 +175,16 @@ footer{
 	opacity: 0;
 	transition: 1s; /* フェードの時間(秒) */
 }
-
+/* 
 .slideshow .show {
 	opacity: 1;
 	z-index: 1;
-}
+} */
 
+/* 
 .pic-sp{
   display: none;
-}
+} */
 
 /* mahaloを流すcss */
 /* .title p {
