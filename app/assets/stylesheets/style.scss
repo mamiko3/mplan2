@@ -39,7 +39,7 @@ $white: white;
 
 body,html {
   height: 100%;
-  background-color: $lightGray;
+  background-color: #fff;
 }
 
 body {
@@ -375,6 +375,9 @@ footer {
   @include boxBase;
   color: $gray;
   p {
+    text-align: center;
+  }
+  a backtotop {
     text-align: center;
   }
 }
