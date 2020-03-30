@@ -1,5 +1,5 @@
 <div class="contents row">
-  <p><%= @nickname %>のmypage</p>
+  <p><%= current_user.nickname %>のmypage</p>
 
   <% @tweets.each do |tweet| %>    
     <%= render partial: "tweets/tweet", locals: { tweet: tweet } %>

@@ -259,10 +259,10 @@ div.contents.row {
       }
       ul.more_list {
         position: absolute;
-        text-align: left;
+        text-align: center;
         width: 80px;
         right: 0;
-        font-size: 12px;
+        font-size: 14px;
         background-color: #fff;
         border: 1px solid #ddd;
         display: none;
@@ -275,7 +275,7 @@ div.contents.row {
           }
           a {
             display: block;
-            padding: 5px;
+            // padding: 5px;
             &:hover {
               background-color: $accent;
               color: #fff;

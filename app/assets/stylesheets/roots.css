@@ -19,8 +19,9 @@ body{
   width: 100vw;
   height: 500px;
   position: relative;
-  background-image: url("https://www.billboard-japan.com/scale/news/00000085/85411/800x_image.jpg");
-  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url("https://www.billboard-japan.com/scale/news/00000085/85411/800x_image.jpg");  /* 背景画像指定 */
+  /* background-image: "tulip02.jpg"; */
+  /* background-image: url("https://www.billboard-japan.com/scale/news/00000085/85411/800x_image.jpg"); */
+  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%), url("/tulip01.jpg");/* 背景画像指定 */
   background-position: center;
 }
 
