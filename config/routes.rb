@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: "roots#index"
+  
+  resources :roots, only: [:new,:create]
+
   resources :tweets do
     resources :comments, only: :create
     collection do

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_26_060836) do
+ActiveRecord::Schema.define(version: 2020_03_30_072456) do
 
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
@@ -20,8 +20,13 @@ ActiveRecord::Schema.define(version: 2020_02_26_060836) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "roots", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "post"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
+  create_table "tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "text"
     t.text "image"
     t.datetime "created_at", null: false
