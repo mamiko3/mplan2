@@ -73,9 +73,13 @@
         </form>
       </div>
     </div>    
-    <div class="content__right">pictweet-Neo
+    <div class="content__right">
+    <%= link_to 'my memo', '/roots/new' %>
+    <%# <a href = "http://localhost:3000/roots/new">my memo</a> %>
       <div id="slideshow" class="slideshow">
-        <span><%= image_tag 'pic01.jpg', class: 'slideshow' %></span> 
+      <% @roots.each do |root| %>
+        <%= root.post%>
+      <% end %>
           <%# <img src="/assets/image/pic01.jpg" width="503" height="302" alt=""> %>
           <%# <img src="image/pic02.jpg" width="503" height="302" alt="">
           <img src="image/pic03.jpg" width="503" height="302" alt="">
