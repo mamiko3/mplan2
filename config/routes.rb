@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "roots#index"
   
-  resources :roots, only: [:new,:create]
+  resources :roots
+  post "roots/:id/destroy" => "posts#destroy"
 
   resources :tweets do
     resources :comments, only: :create
