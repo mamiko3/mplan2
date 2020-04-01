@@ -1,6 +1,10 @@
-my memo
+<div class="contents row">
+  <div class="container">
 
-<%= form_tag('/roots', method: :post) do %> 
-  <input type="text" name="post"> 
-  <input type="submit" value="投稿する"> 
-<% end %>
+    <%= form_tag('/roots', method: :post) do %> 
+      <h3>やりたいことを書いておく。</h3>
+      <input type="text" name="post"> 
+      <input type="submit" value="投稿する"> 
+    <% end %>
+  </div>
+</div>

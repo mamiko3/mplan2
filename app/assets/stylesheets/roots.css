@@ -15,6 +15,11 @@ body{
   font-family: 'Pangolin';
 }
 
+.header_done{
+  margin: 0 auto;
+  border-radius: 10em;
+}
+
 #main {
   width: 100vw;
   height: 500px;
@@ -61,10 +66,11 @@ li{
 a{
   text-decoration: none;
   color: #3879D9;
+  font-weight: bolder;
 }
 
 .content {
-  height: 600px;
+  height: 650px;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -126,10 +132,38 @@ form {
 
   .content__right{
   width : 40% ;
-  height: 400px;
+  height: auto;
   /* background-color: lightgray; */
   position: relative;
+  margin: 15px;
+  border: double;
+  border-color: #3879D9;
+  border-radius: 3em;
   }
+
+  .post2{
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .post2 a{
+    text-align: end;
+  }
+
+  .contents_show{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .show_title{
+    text-align: center;
+  }
+
+
+
+
+
 
   /* .gifmagazine-embed{
     width: 100%;
@@ -167,6 +201,16 @@ form {
 	width: auto; /*画像の横幅*/
   height: 400px; /* 画像の縦幅 */
   margin: 0 auto;
+}
+
+.slideshow_bottom{
+  padding-top: 35px;
+  width: 100%;
+}
+
+.slideshow_bottom a{
+  color: #3879D9;
+  /* border: cornflowerblue solid 1px; */
 }
 
 .span img {

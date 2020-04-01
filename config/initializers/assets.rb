@@ -17,3 +17,5 @@ Rails.application.config.assets.precompile += %w( roots.css )
 Rails.application.config.assets.precompile += %w( roots_sp.css )
 
 Rails.application.config.assets.precompile += %w( roots.js )
+
+Rails.application.config.assets.precompile += %w( rails-ujs.js )

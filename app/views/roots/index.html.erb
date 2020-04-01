@@ -74,21 +74,31 @@
       </div>
     </div>    
     <div class="content__right">
-    <%= link_to 'my memo', '/roots/new' %>
-    <%# <a href = "http://localhost:3000/roots/new">my memo</a> %>
+    <%= link_to 'やりたいことリスト', '/roots/new' %>
       <div id="slideshow" class="slideshow">
-      <% @roots.each do |root| %>
-        <%= root.post%>
-      <% end %>
+        <% @roots.each do |root| %>
+          <div class="post2">
+            <ul class="post_text">
+              <li><%= root.post%></li>
+              <li><%= root.created_at%></li>
+            </ul>
+          <%= link_to 'check', "roots/#{root.id}" %>
+          </div>
+        <% end %>
+        <div class="slideshow_bottom">
+        <%= paginate(@roots) %>
+        </div>
+        <hr style="margin-bottom: 20px;">
+        <%= link_to'新しくメモる', '/roots/new' %>
+      </div>
+    </div>
+  </div>
+
           <%# <img src="/assets/image/pic01.jpg" width="503" height="302" alt=""> %>
           <%# <img src="image/pic02.jpg" width="503" height="302" alt="">
           <img src="image/pic03.jpg" width="503" height="302" alt="">
           <img src="image/pic04.jpg" width="503" height="302" alt="">
           <img src="image/pic05.jpg" width="503" height="302" alt=""> %>
-      </div>
-    </div>
-  </div>
-
   <%# <iframe src="//gifmagazine.net/embed/glp/1259035" width="300" height="225" frameBorder="0" class="gifmagazine-embed" allowFullScreen></iframe><p><a href="https://gifmagazine.net/post_images/1259035" target="_blank">via GIFMAGAZINE</a></p> %>
 <%# 
 
