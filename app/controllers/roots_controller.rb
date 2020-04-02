@@ -13,7 +13,8 @@ class RootsController < ApplicationController
 
   def create
     Root.create(root_params)
-    render layout: false #application.html.erbを適用したくない
+    redirect_to root_path
+    # render layout: false #application.html.erbを適用したくない
   end
 
   def show

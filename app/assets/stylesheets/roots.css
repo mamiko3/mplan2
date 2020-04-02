@@ -133,7 +133,6 @@ form {
   .content__right{
   width : 40% ;
   height: auto;
-  /* background-color: lightgray; */
   position: relative;
   margin: 15px;
   border: double;
@@ -147,8 +146,8 @@ form {
     margin-top: 30px;
   }
 
-  .post2 a{
-    text-align: end;
+  #container_new{
+    text-align: center;
   }
 
   .contents_show{
@@ -160,7 +159,9 @@ form {
     text-align: center;
   }
 
-
+  .button_to{
+    font-size: 40px;
+  }
 
 
 
