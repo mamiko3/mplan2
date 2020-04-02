@@ -1,10 +1,12 @@
-<div class="contents row">
-  <div class="container">
-
+<div id="contents new">
+  <div style="text-align: center; background-color: beige; height:200px;">
     <%= form_tag('/roots', method: :post) do %> 
       <h3>やりたいことを書いておく。</h3>
-      <input type="text" name="post"> 
-      <input type="submit" value="投稿する"> 
+      <input type="text" name="post" style="width:250px; height:30px; margin-top:20px;"> 
+      <input type="submit" value="リストに追加" style="height:30px; margin-top:20px; font-size:16px;"> 
     <% end %>
   </div>
+  <footer style="text-align: center;">
+  <%= link_to 'Back to snack hikaru', "/" %>
+  </footer>
 </div>
