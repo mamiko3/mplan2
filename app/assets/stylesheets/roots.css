@@ -93,6 +93,7 @@ form {
 
 .content__left--search{
   height: 40px;
+  margin-left: 60px;
 }
 
 .search_container {
@@ -110,6 +111,7 @@ form {
 .search_container input[type="text"]{
     border: none;
     height: 2.0em;
+    width: 100%;
   }
 .search_container input[type="text"]:focus {
     outline: 0;
